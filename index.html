@@ -3,99 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADDON Inc. - Innovating the future with cutting-edge technology across software, defense, and automotive industries.">
+    <meta name="keywords" content="ADDON Inc., VirtuLink, ADDON Defense Systems, NAVIS, AI, defense technology, automotive innovation">
+    <meta name="author" content="ADDON Inc.">
     <title>ADDON Inc. - Innovating the Future</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background: #0d1b2a;
-            color: white;
-            text-align: center;
-        }
-        header {
-            background: #1b263b;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        header nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 100px 20px;
-        }
-        .subsidiaries {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .card {
-            background: #415a77;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: left;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .card:hover {
-            background: #778da9;
-        }
-        .contact {
-            margin-top: 30px;
-            font-size: 1.2rem;
-            background: #1b263b;
-            padding: 20px;
-        }
-        .contact a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#subsidiaries">Subsidiaries</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="container" id="home">
-        <h1>Welcome to ADDON Inc.</h1>
-        <p>Leading Innovation in Defense, Automotive, and Software Technologies</p>
-    </div>
-    <div class="subsidiaries" id="subsidiaries">
-        <div class="card" onclick="window.location.href='virtuLink.html'">
-            <h2>VirtuLink</h2>
-            <p>Our software division, specializing in AI, chat platforms, and digital solutions.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="ADDON Inc. Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subsidiaries">Subsidiaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="card" onclick="window.location.href='addon_defense.html'">
-            <h2>ADDON Defense Systems</h2>
-            <p>Advanced defense technologies, including radar, avionics, and military AI solutions.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Innovating the Future</h1>
+            <p class="lead mb-4">Pioneering advanced technological solutions across multiple industries through innovation and collaboration.</p>
+            <a href="#subsidiaries" class="btn btn-primary btn-lg">Explore Our Subsidiaries</a>
         </div>
-        <div class="card" onclick="window.location.href='navis.html'">
-            <h2>NAVIS</h2>
-            <p>Innovating the automotive industry with AI-driven navigation and smart vehicle systems.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About ADDON Inc.</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>ADDON Inc. is a global leader in technological innovation, specializing in software, defense, and automotive solutions. With a commitment to excellence, we empower industries with cutting-edge technologies that drive progress and transformation.</p>
+                    <p>Our subsidiaries—VirtuLink, ADDON Defense Systems, and NAVIS—work collaboratively to deliver world-class solutions that redefine the future.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/hero-bg.jpg" alt="About ADDON Inc." class="img-fluid rounded">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="contact" id="contact">
-        <p>📧 Email: <a href="mailto:addonsell@gmail.com">addonsell@gmail.com</a></p>
-        <p>📸 Instagram: <a href="https://www.instagram.com/adeepzone/" target="_blank">@adeepzone</a></p>
-    </div>
+    </section>
+
+    <!-- Subsidiaries Section -->
+    <section id="subsidiaries" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Subsidiaries</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card subsidiary-card">
+                        <img src="assets/vl-icon.png" alt="VirtuLink" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">VirtuLink</h3>
+                            <p class="text-muted">Software & AI Solutions</p>
+                            <p class="card-text">Developing cutting-edge AI platforms and digital marketplaces.</p>
+                            <a href="virtulink.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for ADS and NAVIS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="assets/testimonial1.jpg" alt="Client 1" class="testimonial-img">
+                        <p class="testimonial-text">"ADDON Inc. has transformed our business with their innovative solutions."</p>
+                        <p class="testimonial-author">- John Doe, CEO of TechCorp</p>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>Email: <a href="mailto:addonsell@gmail.com">addonsell@gmail.com</a></p>
+                    <p>Instagram: <a href="https://instagram.com/adeepzone">@adeepzone</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ADDON Inc.</h5>
+                    <p>Innovating the future with cutting-edge technology.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home</a></li>
+                        <li><a href="#about" class="text-light">About</a></li>
+                        <li><a href="#subsidiaries" class="text-light">Subsidiaries</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Email: <a href="mailto:addonsell@gmail.com" class="text-light">addonsell@gmail.com</a></p>
+                    <p>Instagram: <a href="https://instagram.com/adeepzone" class="text-light">@adeepzone</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2023 ADDON Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
